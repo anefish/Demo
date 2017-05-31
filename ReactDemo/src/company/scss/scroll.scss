@@ -1,0 +1,60 @@
+.iscroll-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 6.4rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    // background: #ccc;
+    overflow: hidden;
+}
+
+.iscroll-body {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.iscroll-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.iscroll-body li {
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #fff;
+    background-color: #fafafa;
+    font-size: 14px;
+}
+
+.iscroll-pull-down, .iscroll-pull-up {
+    line-height: 4rem;
+    color: #888;
+    text-align: center;
+}
+
+.iscroll-pull-down {
+    margin-top: -4rem;
+}

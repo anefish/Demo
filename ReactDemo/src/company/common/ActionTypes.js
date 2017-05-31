@@ -1,0 +1,1 @@
+export const SET_USER_MENU = 'SET_USER_MENU'
