@@ -9,9 +9,8 @@ app.use(express.static('dist'));
 
 //本地服务模拟接口，引入各个模块路由
 var demo = require('./routes/demo'); //demo
-var robot = require('./routes/robot'); //
 //本地直连FAT测试环境时，注释下行即可
-// app.use('/', [demo, robot]);
+// app.use('/', [demo]);
 
 //-------------- 请求转发 start -----------------------//
 var bodyParser = require('body-parser');
@@ -21,11 +20,12 @@ app.use(bodyParser.json()); // for parsing application/json
 app.use('/test', function(req, res) {
   var forwardUrl = 'http://demo.com/test';
   var url = forwardUrl + req.url;
-  console.log('-----------req.url: ', req.url);
-  console.log('-----------url: ', url);
-  console.log('-----------req.method: ', req.method);
-  console.log('-----------req.body: ', req.body);
-  // console.log('>>>>>>>>>>req: ', req);
+
+  // console.log('-----------req.url: ', req.url);
+  // console.log('-----------url: ', url);
+  // console.log('-----------req.method: ', req.method);
+  // console.log('-----------req.body: ', req.body);
+
   // request.post(url, {json: req.body}).pipe(res);
   // request.get(url).pipe(res);
   request({
