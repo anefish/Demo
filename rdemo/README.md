@@ -1,2 +1,0 @@
-# rdemo
-redux + react demo.
